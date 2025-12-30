@@ -33,7 +33,8 @@ class TIMU_WEBP_Support {
         add_action( 'admin_menu', array( __CLASS__, 'add_admin_menu' ) );
         add_action( 'wp_ajax_timu_wsbulk_optimize', array( __CLASS__, 'ajax_bulk_optimize' ) );
         add_action( 'wp_ajax_timu_wsrestore_single', array( __CLASS__, 'ajax_restore_single' ) );
-    }
+        add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( __CLASS__, 'add_plugin_action_links' ) );
+}
 
     /**
      * Register the Media submenu page.
@@ -43,9 +44,17 @@ class TIMU_WEBP_Support {
             __( 'WebP Support', 'thisismyurl-webp-support' ),
             __( 'WebP Support', 'thisismyurl-webp-support' ),
             'manage_options',
-            'webp-optimizer',
+            'thisismyurl-webp-support',
             array( __CLASS__, 'render_admin_page' )
         );
+    }
+
+    public static function add_plugin_action_links( $links ) {
+         $custom_links = array(
+                '<a href="' . admin_url( 'admin.php?page=webp-optimizer' ) . '">' . esc_html__( 'Settings', 'thisismyurl-webp-support' ) . '</a>',
+                '<a href="https://thisismyurl.com/donate/" target="_blank" style="color: #2271b1; font-weight: bold;">' . esc_html__( 'Donate', 'thisismyurl-webp-support' ) . '</a>',
+            );
+        return array_merge( $custom_links, $links );
     }
 
     /**
