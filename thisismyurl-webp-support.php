@@ -6,7 +6,7 @@
  * Plugin URI:  https://thisismyurl.com/thisismyurl-webp-support/
  * Donate link: https://thisismyurl.com/donate/
  * Description: Non-destructive WebP conversion with backups, live categorization, and one-click restoration.
- * Version:     1.251229
+ * Version: 1.260101
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Update URI: https://github.com/thisismyurl/thisismyurl-webp-support
