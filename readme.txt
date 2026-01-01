@@ -50,6 +50,9 @@ Yes! The conversion engine specifically preserves alpha channels to ensure your 
 n
 = 1.260101 =
 * Updated core library to version 1.260101
+n
+= 1.260101 =
+* Updated core library to version 1.260101
 
 = 1.251229 =
 * Fixed GitHub updater directory renaming logic.
