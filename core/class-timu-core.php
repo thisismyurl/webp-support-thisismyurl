@@ -14,16 +14,20 @@ if ( ! class_exists( 'TIMU_Core_v1' ) ) {
         protected $plugin_url;
         protected $options_group;
         protected $plugin_icon;
+        protected $menu_parent = 'options-general.php'; // Default to Settings
         protected $license_message = '';
-        public static $version = '1.3.5';
-        
+        public static $version = '1.3.6';
 
-       
-        public function __construct( $slug, $url, $group, $icon = '' ) {
+        /**
+         * Enhanced Constructor
+         * @param string $parent The parent menu slug (e.g., 'tools.php' or 'options-general.php')
+         */
+        public function __construct( $slug, $url, $group, $icon = '', $parent = 'options-general.php' ) {
             $this->plugin_slug   = $slug;
             $this->plugin_url    = $url;
             $this->options_group = $group;
             $this->plugin_icon   = $icon;
+            $this->menu_parent   = $parent;
 
             add_action( 'admin_init', array( $this, 'register_core_settings' ) );
             add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_core_assets' ) );
@@ -32,41 +36,6 @@ if ( ! class_exists( 'TIMU_Core_v1' ) ) {
             add_action( 'wp_ajax_timu_install_tool', array( $this, 'ajax_install_plugin' ) );
         }
 
-
-        public function sanitize_core_options( $input ) {
-            delete_transient( $this->plugin_slug . '_license_status' );
-            delete_transient( $this->plugin_slug . '_license_msg' );
-            if ( isset( $input['registration_key'] ) ) {
-                $input['registration_key'] = sanitize_text_field( $input['registration_key'] );
-            }
-            return $input;
-        }
-
-        
-
-        public function ajax_install_plugin() {
-            check_ajax_referer( 'timu_install_nonce', 'nonce' );
-            if ( ! current_user_can( 'install_plugins' ) ) {
-                wp_send_json_error( __( 'Permissions error.', 'timu' ) );
-            }
-
-            $download_url = esc_url_raw( $_POST['download_url'] );
-            if ( strpos( $download_url, 'github.com' ) !== false && strpos( $download_url, '.zip' ) === false ) {
-                $download_url = preg_replace( '/\/releases\/latest\/?$/', '', $download_url );
-                $download_url = rtrim( $download_url, '/' ) . '/archive/refs/heads/main.zip';
-            }
-
-            include_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
-            include_once ABSPATH . 'wp-admin/includes/file.php';
-
-            $upgrader = new Plugin_Upgrader( new Automatic_Upgrader_Skin() );
-            $result   = $upgrader->install( $download_url );
-
-            if ( is_wp_error( $result ) ) {
-                wp_send_json_error( esc_html( $result->get_error_message() ) );
-            }
-            wp_send_json_success();
-        }
 
         public function init_updater() {
             $updater_path = WP_PLUGIN_DIR . '/' . $this->plugin_slug . '/updater.php';
@@ -83,10 +52,28 @@ if ( ! class_exists( 'TIMU_Core_v1' ) ) {
                 }
             }
         }
+        
+        /**
+         * Centralized Filesystem API Initialization
+         * Provides a safe, standardized way for any plugin to handle files.
+         */
+        protected function init_fs() {
+            global $wp_filesystem;
+            if ( empty( $wp_filesystem ) ) {
+                require_once ABSPATH . 'wp-admin/includes/file.php';
+                WP_Filesystem();
+            }
+            return $wp_filesystem;
+        }
 
+        /**
+         * Standardized Action Links
+         * Uses the $menu_parent property to determine the correct link.
+         */
         public function add_plugin_action_links( $links ) {
             $is_valid = $this->is_licensed();
-            $settings_url = admin_url( 'options-general.php?page=' . $this->plugin_slug );
+            // Automatically detects if the link should go to Settings or Tools
+            $settings_url = admin_url( $this->menu_parent . '?page=' . $this->plugin_slug );
             $action_links[] = '<a href="' . esc_url( $settings_url ) . '">' . __( 'Settings', 'timu' ) . '</a>';
 
             if ( $is_valid ) {
