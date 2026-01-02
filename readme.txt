@@ -51,6 +51,9 @@ n
 = 1.260102 =
 * Updated core library to version 1.260102
 n
+= 1.260102 =
+* Updated core library to version 1.260102
+n
 = 1.260101 =
 * Updated core library to version 1.260101
 n
