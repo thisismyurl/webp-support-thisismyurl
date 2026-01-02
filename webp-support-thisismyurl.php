@@ -9,7 +9,7 @@
  * Description:         Safely enable WEBP uploads and convert existing images to AVIF format.
  * Tags:                webp, uploads, media library, optimization
  * 
- * Version:             1.26010212
+ * Version:             1.26010216
  * Requires at least:   5.3
  * Requires PHP:        7.4
  * 
@@ -26,12 +26,15 @@
  * 
  */
 
+
 /**
  * Security: Prevent direct file access.
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+
 
 /**
  * Version-aware Core Loader
@@ -41,10 +44,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * where multiple versions of the core library might be present.
  */
 function timu_webp_support_load_core() {
-	$core_path = plugin_dir_path( __FILE__ ) . 'core/class-timu-core.php';
-	if ( ! class_exists( 'TIMU_Core_v1' ) ) {
-		require_once $core_path;
-	}
+	require_once plugin_dir_path( __FILE__ ) . 'core/class-timu-core.php';
 }
 timu_webp_support_load_core();
 
@@ -64,14 +64,12 @@ class TIMU_WebP_Support extends TIMU_Core_v1 {
 	 */
 	public function __construct() {
 		parent::__construct(
-			'webp-support-thisismyurl',      // Unique plugin slug.
-			plugin_dir_url( __FILE__ ),       // Base URL for assets.
-			'timu_ws_settings_group',         // Settings registration group.
-			'',                               // Custom icon (optional).
-			'tools.php',                       // Admin menu parent location.
-
-			
-		);
+            'webp-support-thisismyurl',
+            plugin_dir_url( __FILE__ ),
+            'timu_ws_settings_group',
+            '',
+            'tools.php'
+        );
 
 		/**
 		 * Hook: Initialize the settings blueprint.
@@ -108,6 +106,8 @@ class TIMU_WebP_Support extends TIMU_Core_v1 {
 		 * Dependency Check: Verify if the AVIF sibling plugin is active.
 		 */
 		$avif_active = class_exists( 'TIMU_AVIF_Support' );
+
+		$this->is_licensed();
 
 		/**
 		 * Dynamically build radio options based on the plugin ecosystem.
@@ -146,7 +146,7 @@ class TIMU_WebP_Support extends TIMU_Core_v1 {
 						'default' => 80,
 						'min'     => 10,
 						'max'     => 100,
-						'label'        => __( 'WebP Quality', 'svg-support-thisismyurl' ),
+						'label'        => __( 'WebP Quality', 'webp-support-thisismyurl' ),
 						'default'      => 80,
 						'show_if' => array(
 							'field' => 'target_format', // Must match the ID of your radio buttons
@@ -158,11 +158,20 @@ class TIMU_WebP_Support extends TIMU_Core_v1 {
 						'default' => 80,
 						'min'     => 10,
 						'max'     => 100,
-						'label'        => __( 'AVIF Quality', 'svg-support-thisismyurl' ),
+						'label'        => __( 'AVIF Quality', 'webp-support-thisismyurl' ),
 						'show_if' => array(
 							'field' => 'target_format', // Must match the ID of your radio buttons
 							'value' => 'avif'           // Must match the value 'webp' in the radio option
 						)
+					),
+					'hr'  => array(
+						'type'    	=> 'hr'
+					),
+					'license_key'  => array(
+						'type'    => 'license', // Now a slider!
+						'default' => '',
+						'label'        => __( 'License Key', 'webp-support-thisismyurl' ),
+						'desc'      => ( $this->license_message )
 					),
 				),
 			),
@@ -189,6 +198,9 @@ class TIMU_WebP_Support extends TIMU_Core_v1 {
 			) );
 		}
 	}
+
+	
+
 
 	/**
 	 * Admin Menu Registration

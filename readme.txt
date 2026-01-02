@@ -7,7 +7,7 @@ Support Link: https://thisismyurl.com/contact/
 Tags: webp, optimization, speed, image-optimizer, performances
 Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 1.26010212
+Stable tag: 1.26010216
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 GitHub Plugin URI: https://github.com/thisismyurl/thisismyurl-webp-support/
@@ -47,6 +47,288 @@ We recommend using the "Restore All" button in the dashboard before uninstallati
 Yes! The conversion engine specifically preserves alpha channels to ensure your logos and transparent graphics remain crisp and clear.
 
 == Changelog ==
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010216 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010216 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010216 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010216 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010216 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010216 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010216 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010216 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-ajax.php
+
+= 1.26010216 =
+* Core hierarchy updated via core\assets\shared-admin.js
+
+= 1.26010216 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010216 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010216 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010216 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010215 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010215 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010215 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010215 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010215 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010215 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010215 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010215 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010215 =
+* Core hierarchy updated via webp-support-thisismyurl\readme.txt
+
+= 1.26010215 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010215 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010215 =
+* Core hierarchy updated via webp-support-thisismyurl\core\assets\shared-admin.css
+
+= 1.26010215 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010215 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010215 =
+* Core hierarchy updated via webp-support-thisismyurl\core\desktop.ini
+
+= 1.26010215 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010215 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010215 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\readme.txt
+
+= 1.26010214 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010214 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\core\class-timu-vault.php
+
+= 1.26010214 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\core\class-timu-vault.php
+
+= 1.26010214 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\readme.txt
+
+= 1.26010214 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\core\class-timu-admin.php
+
+= 1.26010214 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010214 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\webp-support-thisismyurl.php
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\core\assets
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\readme.txt
+
+= 1.26010214 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\core\2682333820516292531891922458163187249407.ico
+
+= 1.26010214 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010214 =
+* Core hierarchy updated via webp-support-thisismyurl\core\assets
+
+= 1.26010214 =
+* Core hierarchy updated via Initial Launch
+
+= 1.26010214 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010213 =
+* Core hierarchy updated via webp-support-thisismyurl\readme.txt
+
+= 1.26010213 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010213 =
+* Core hierarchy updated via webp-support-thisismyurl\readme.txt
+
+= 1.26010213 =
+* Core hierarchy updated via core\assets\shared-admin.js
+
+= 1.26010213 =
+* Core hierarchy updated via webp-support-thisismyurl\core\2682333820516292531891922458163187249407.ico
+
+= 1.26010213 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010213 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010213 =
+* Core hierarchy updated via webp-support-thisismyurl\readme.txt
+
+= 1.26010213 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010213 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010213 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010213 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010213 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010213 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010213 =
+* Core hierarchy updated via webp-support-thisismyurl\core\assets\shared-admin.css
+
+= 1.26010213 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010213 =
+* Core hierarchy updated via webp-support-thisismyurl\readme.txt
+
+= 1.26010213 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010213 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010213 =
+* Core hierarchy updated via core\class-timu-core.php
+
+= 1.26010213 =
+* Core hierarchy updated via webp-support-thisismyurl\readme.txt
+
+= 1.26010213 =
+* Core hierarchy updated via core\class-timu-ajax.php
+
+= 1.26010213 =
+* Core hierarchy updated via Initial Launch
+
+= 1.26010213 =
+* Core hierarchy updated via Initial Script Launch
 
 = 1.26010212 =
 * TIMU_Core updated to version 1.26010212
