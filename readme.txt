@@ -49,6 +49,69 @@ Yes! The conversion engine specifically preserves alpha channels to ensure your 
 == Changelog ==
 
 = 1.26010217 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010217 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010217 =
+* Core hierarchy updated via webp-support-thisismyurl\readme.txt
+
+= 1.26010217 =
+* Core hierarchy updated via webp-support-thisismyurl\core\assets\shared-admin.css
+
+= 1.26010217 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010217 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010217 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010217 =
+* Core hierarchy updated via webp-support-thisismyurl\core\class-timu-processor.php
+
+= 1.26010217 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010217 =
+* Core hierarchy updated via webp-support-thisismyurl\core\assets\shared-admin.js
+
+= 1.26010217 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010217 =
+* Core hierarchy updated via webp-support-thisismyurl\core\assets\shared-admin.js
+
+= 1.26010217 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010217 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010217 =
+* Core hierarchy updated via webp-support-thisismyurl\core\assets
+
+= 1.26010217 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010217 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010217 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010217 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010217 =
+* Core hierarchy updated via webp-support-thisismyurl
+
+= 1.26010217 =
+* Core hierarchy updated via core\class-timu-admin.php
+
+= 1.26010217 =
 * Core hierarchy updated via webp-support-thisismyurl\core\assets
 
 = 1.26010217 =
