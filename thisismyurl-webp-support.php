@@ -9,7 +9,7 @@
  * Description:         Safely enable WEBP uploads and convert them to WebP format.
  * Tags:                webp, uploads, media library
  * 
- * Version:             1.260101
+ * Version: 1.260102
  * Requires at least:   5.3
  * Requires PHP:        7.4
  * 
