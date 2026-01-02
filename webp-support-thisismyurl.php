@@ -4,12 +4,12 @@
  * Author URI:          https://thisismyurl.com/?source=webp-support-thisismyurl
  * Plugin Name:         WebP Support by thisismyurl.com
  * Plugin URI:          https://thisismyurl.com/webp-support-thisismyurl/?source=webp-support-thisismyurl
- * Donate link:         https://thisismyurl.com/donate/?source=webp-support-thisismyurl
+ * Donate link:         https://thisismyurl.com/webp-support-thisismyurl/#register?source=webp-support-thisismyurl
  * 
  * Description:         Safely enable WEBP uploads and convert existing images to AVIF format.
  * Tags:                webp, uploads, media library, optimization
  * 
- * Version:             1.26010217
+ * Version:             1.260102
  * Requires at least:   5.3
  * Requires PHP:        7.4
  * 

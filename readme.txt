@@ -2,12 +2,12 @@
 Contributors: thisismyurl
 Author: thisismyurl
 Author URI: https://thisismyurl.com/
-Donate link: https://thisismyurl.com/donate/
+Donate link: https://thisismyurl.com/webp-support-thisismyurl/#register
 Support Link: https://thisismyurl.com/contact/
 Tags: webp, optimization, speed, image-optimizer, performances
 Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 1.26010217
+Stable tag: 1.260102
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 GitHub Plugin URI: https://github.com/thisismyurl/thisismyurl-webp-support/
@@ -47,6 +47,18 @@ We recommend using the "Restore All" button in the dashboard before uninstallati
 Yes! The conversion engine specifically preserves alpha channels to ensure your logos and transparent graphics remain crisp and clear.
 
 == Changelog ==
+
+= 1.26010218 =
+* Core hierarchy updated via webp-support-thisismyurl\core
+
+= 1.26010218 =
+* Core hierarchy updated via Initial Launch
+
+= 1.26010218 =
+* Core hierarchy updated via Initial Launch
+
+= 1.26010218 =
+* Core hierarchy updated via Initial Launch
 
 = 1.26010217 =
 * Core hierarchy updated via webp-support-thisismyurl\core
