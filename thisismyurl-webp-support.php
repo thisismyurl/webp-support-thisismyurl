@@ -72,7 +72,7 @@ class TIMU_WebP_Support extends TIMU_Core_v1 {
         );
 
         if ( $avif_active ) {
-            $handling_options['avif'] = __( 'Convert Uploads to .avif', 'thisismyurl-webp-support' );
+            $handling_options['avif'] = __( 'Convert uploads to .avif files.', 'thisismyurl-webp-support' );
         }
 
         $blueprint = array(
@@ -83,13 +83,13 @@ class TIMU_WebP_Support extends TIMU_Core_v1 {
                         'type'      => 'switch',
                         'label'     => __( 'Enable WebP Support', 'thisismyurl-webp-support' ),
                         'desc'      => __( 'Allows .webp files to be uploaded to the Media Library.', 'thisismyurl-webp-support' ),
-                        'is_parent' => true, // Mark as parent for visibility logic
+                        'is_parent' => true, 
                         'default'   => 1
                     ),
                     'handling_mode' => array(
                         'type'    => 'radio',
                         'label'   => __( 'WebP Handling Mode', 'thisismyurl-webp-support' ),
-                        'parent'  => 'enabled', // Child of the main toggle
+                        'parent'  => 'enabled', 
                         'options' => $handling_options,
                         'default' => 'asis',
                         'desc'    => $avif_active 
@@ -100,7 +100,7 @@ class TIMU_WebP_Support extends TIMU_Core_v1 {
                         'type'    => 'number',
                         'label'   => __( 'Compression Quality', 'thisismyurl-webp-support' ),
                         'desc'    => __( 'Set image quality from 1-100 (Default: 80).', 'thisismyurl-webp-support' ),
-                        'parent'  => 'enabled', // Hide if WebP support is disabled
+                        'parent'  => 'enabled', 
                         'min'     => 1,
                         'max'     => 100,
                         'default' => 80
