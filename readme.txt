@@ -51,8 +51,15 @@ Visit [https://thisismyurl.com/webp-support-thisismyurl/#register](https://thisi
 = Does this delete my original images? =
 No. The plugin optimizes the files you upload to ensure they are web-ready without destroying your original source content.
 
-= 1.260101 =
-* Updated core library to version 1.260101
+
+== Changelog ==
+
+= 1.26010222 =
+* Core hierarchy updated via webp-support-thisismyurl\core\icons
+
+= 1.26010222 =
+* Core hierarchy updated via webp-support-thisismyurl\readme.txt
+
 
 = 1.251229 =
 * Fixed GitHub updater directory renaming logic.
