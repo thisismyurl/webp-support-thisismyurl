@@ -1,4 +1,4 @@
-﻿=== WebP Support by thisismyurl ===
+=== WebP Support by thisismyurl ===
 Contributors: thisismyurl
 Author: thisismyurl
 Author URI: https://thisismyurl.com/
@@ -7,7 +7,7 @@ Support Link: https://thisismyurl.com/contact/
 Tags: webp, optimization, speed, image-optimizer, performances
 Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 1.260102
+Stable tag: 1.26010222
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 GitHub Plugin URI: https://github.com/thisismyurl/thisismyurl-webp-support/
@@ -43,7 +43,7 @@ Unlike standard WebP plugins, this tool is "ecosystem aware." If you are also us
 Yes! The WebP Support plugin is 100% free to download and use. Our goal is to help everyone achieve a faster, modern web.
 
 = Why should I register for support? =
-While the core features are free, registering your copy allows you to access priority technical support and receive automatic updates directly in your dashboard. It’s the best way to ensure your site stays compatible with future WordPress updates.
+While the core features are free, registering your copy allows you to access priority technical support and receive automatic updates directly in your dashboard. It�s the best way to ensure your site stays compatible with future WordPress updates.
 
 = How do I register? =
 Visit [https://thisismyurl.com/webp-support-thisismyurl/#register](https://thisismyurl.com/webp-support-thisismyurl/#register) to sign up. Once you have your key, enter it into the "License Key" field in the plugin settings to unlock support access.
